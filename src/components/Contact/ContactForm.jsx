@@ -18,7 +18,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_2raesgc','template_vp4gthm',e.target,'YSRNiC2v6tBTEpTAt')
+    emailjs.sendForm('service_hldwwtr','template_vp4gthm',e.target,'YSRNiC2v6tBTEpTAt')
     .then(res=>{
       
       if(res.status==200){
