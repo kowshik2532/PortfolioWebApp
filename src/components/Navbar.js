@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { FaYoutube } from "react-icons/fa";
 import { AiOutlineContacts } from "react-icons/ai";
 import {
   AiFillStar,
@@ -16,7 +12,6 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { CloseButton } from "react-bootstrap";
 
 
 

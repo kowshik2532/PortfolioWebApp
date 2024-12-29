@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import weather from "../../Assets/Projects/weather.png";
-import crypto from "../../Assets/Projects/crypto.png";
-import todo from "../../Assets/Projects/todo.png";
 import fmportal from "../../Assets/Projects/fmportal.png";
-import suicide from "../../Assets/Projects/suicide.png";
 import HousePricePredictor from "../../Assets/Projects/HousePricePredictor.jpeg";
 
 function Projects() {
