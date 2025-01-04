@@ -5,19 +5,11 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { AiOutlineContacts } from "react-icons/ai";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
-
-
-
-
-
-
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -31,20 +23,6 @@ function NavBar() {
     }
   }
 
-
-
-  const style={
-    img:{    
-        width: 'auto',
-        height: '1500px', 
-    },
-    name:{
-      color:'red',
-      fontSize: '30px'
-    }
-
-  }
-
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -55,10 +33,9 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex" > Guru Kowshik  &nbsp; 
-          <span style={{ color:'#B941FF', fontWeight: 'bold' }}>Anumolu</span>
-          {/* <img src={logo} className="img-fluid logo" alt="brand" style={style.img}/> */}
-          
+        <Navbar.Brand href="/" className="d-flex">
+          Guru Kowshik &nbsp;
+          <span style={{ color: "#B941FF", fontWeight: "bold" }}>Anumolu</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -77,7 +54,6 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -87,7 +63,6 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -100,7 +75,6 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -110,7 +84,6 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -119,7 +92,7 @@ function NavBar() {
               >
                 <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
-            </Nav.Item> 
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import emailjs from 'emailjs-com'
 const ContactForm = () => {
   const style={
@@ -21,7 +21,7 @@ const ContactForm = () => {
     emailjs.sendForm('service_hldwwtr','template_vp4gthm',e.target,'YSRNiC2v6tBTEpTAt')
     .then(res=>{
       
-      if(res.status==200){
+      if(res.status===200){
         alert("message sent!!");               
         // window.location.reload();
       }
